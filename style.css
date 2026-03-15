@@ -1,0 +1,148 @@
+:root {
+    --color_institucional: #611232;
+    --color_secundario: ;
+    --fuente_titulos: 'Crimson Text', serif;
+    --fuente_cuerpo: 'Arial', sans-serif;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+    font-family: var(--fuente_titulos);
+}
+
+.negritas {
+    font-weight: bold;
+}
+
+.texto {
+    font-size: 1.4rem;
+    font-family: var(--fuente_cuerpo);
+}
+
+@media (max-width: 730px) {
+    .texto {
+        font-size: 1rem;
+    }
+}
+
+.encabezado {
+    background-color: var(--color_institucional);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--color_institucional);
+    position: sticky;
+    top: 100vh;
+}
+
+.afores {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+}
+
+@media (max-width: 950px) {
+    .afores {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 730px) {
+    .afores {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.logo_consar {
+    width: 7rem;
+    padding: 1rem;
+}
+
+.icono {
+    width: 3rem;
+}
+
+@media (max-width: 730px) {
+    .logo_consar {
+        width: 3rem;
+        padding: 1rem;
+    }
+}
+
+.contenedor_afore {
+    display: flex;
+    justify-content: center;
+    width: 10rem;
+    height: 10rem;
+    border: 0.2rem solid rgb(91, 2, 2);
+    border-radius: 2rem;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 730px) {
+    .contenedor_afore {
+        width: 20rem;
+        height: 5rem;
+    }
+}
+
+.contenedor_afore:hover {
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+.afore_img {
+    padding: 0.5rem;
+    width: 90%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 730px) {
+    .afore_img {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+.contenedor-flipbook {
+    width: 80%;
+    margin: 0 auto;
+    /* Esto centra el div horizontalmente sin afectar a nada más */
+}
+
+.primer_mensaje {
+    padding: 2rem;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* width: 80%;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    text-align: center; */
+}
+
+@media (max-width: 730px) {
+    .primer_mensaje {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.texto_footer {
+    color: white;
+    font-family: var(--fuente_cuerpo);
+}
+.logo {
+    width: 100%;
+}
+
+.redes_sociales {
+    display: block;
+}
