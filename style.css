@@ -1,8 +1,8 @@
 :root {
     --color_institucional: #611232;
     --color_secundario: ;
-    --fuente_titulos: 'Crimson Text', serif;
-    --fuente_cuerpo: 'Arial', sans-serif;
+    --fuente_titulos: 'Noto Sans', sans-serif;
+    --fuente_cuerpo: 'Noto Sans', sans-serif;
 }
 * {
     margin: 0;
